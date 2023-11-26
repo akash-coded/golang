@@ -1,0 +1,9 @@
+// Slices Using Make() Demonstration 
+package main
+import "fmt"
+func main() {
+var my_slice_1 = make([]int, 4, 7)
+	fmt.Printf("Slice 1 = %v, \nlength = %d, \ncapacity = %d\n", my_slice_1, len(my_slice_1), cap(my_slice_1))
+	var my_slice_2 = make([]int, 7)
+	fmt.Printf("Slice 2 = %v, \nlength = %d, \ncapacity = %d\n", my_slice_2, len(my_slice_2), cap(my_slice_2))
+}

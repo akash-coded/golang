@@ -1,0 +1,4 @@
+const Pi = 3.14159
+const MaxValue = 100
+const Greeting = "Hello, World"
+const IsReady = true

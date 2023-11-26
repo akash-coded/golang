@@ -1,0 +1,9 @@
+// Array Example - 2
+package main
+import "fmt"
+func main() {
+arr:= [4]string{"Welcome", "to", "the", "Course"}
+fmt.Println("Elements of the array:")
+for i:= 0; i < 3; i++ {
+fmt.Println(arr[i]) }
+}

@@ -1,0 +1,9 @@
+// String Example 
+package main
+import "fmt"
+func main() {
+str := "Hello World"
+fmt.Printf("Length of  string is:%d", len(str))
+fmt.Printf("\nString is: %s", str)
+fmt.Printf("\nType of str is: %T", str)
+}

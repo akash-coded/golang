@@ -1,0 +1,10 @@
+package main
+import "fmt"
+var no1 int = 10
+func main() { 
+var no2 int = 20
+fmt.Printf("The value of Global number 1 is : %d\n",no1)
+fmt.Printf("The value of Local number 2 is : %d\n",no2)
+display()}
+func display() { 
+fmt.Printf("The value of Global number 1 is : %d\n",no1) }

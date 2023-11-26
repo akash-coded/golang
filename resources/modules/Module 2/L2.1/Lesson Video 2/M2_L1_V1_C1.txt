@@ -1,0 +1,7 @@
+package main
+import "fmt"
+func main() { 
+var number1, number2 int = 10, 20
+fmt.Printf("The value of number 1 is : %d\n",number1)
+fmt.Printf("The value of number 2 is : %d\n“,number2)
+}

@@ -1,0 +1,6 @@
+//Operations with Constants
+const a = 10
+const b = 3
+const sum = a + b
+const product = a * b
+const isTrue = true && false

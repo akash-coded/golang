@@ -1,0 +1,9 @@
+//Slice Literals Demonstration 
+package main
+import "fmt"
+func main() {
+	var my_slice_1 = []string{"Hello", "Dear", "Learners"}
+	fmt.Println("My Slice 1:", my_slice_1)
+	my_slice_2 := []int{2, 54, 76, 57, 32, 14, 40}
+	fmt.Println("My Slice 2:", my_slice_2)
+}

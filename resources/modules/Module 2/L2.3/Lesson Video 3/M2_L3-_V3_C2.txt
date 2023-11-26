@@ -1,0 +1,12 @@
+// Slices Using Arrays Demonstration 
+package main
+import "fmt"
+func main() {
+arr := [3]string{"Hello", "dear", "learners"}
+	var my_slice_1 = arr[1:2]
+	my_slice_2 := arr[0:]
+	my_slice_3 := arr[:2]
+	fmt.Println("My Array: ", arr)
+	fmt.Println("My Slice 1: ", my_slice_1)
+	fmt.Println("My Slice 2: ", my_slice_2)
+	fmt.Println("My Slice 3: ", my_slice_3) }

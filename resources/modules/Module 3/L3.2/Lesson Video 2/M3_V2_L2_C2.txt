@@ -1,0 +1,18 @@
+//Accessing Struct Example
+package main
+import "fmt"
+type Person struct {
+    First_Name string
+    Last_Name  string
+    Age       int }
+func main() {
+    person := Person{
+        First_Name: "Aman",
+           
+Last_Name:  "Goel",
+        Age: 28, 
+}
+		fmt.Println("First Name is", person.First_Name)
+		fmt.Println("Last Name is ", person.Last_Name)
+    fmt.Println("Age is", person.Age)
+}

@@ -1,0 +1,9 @@
+//Function Level Scope
+package main
+import "fmt"
+func myFunction() {
+    localVar := "I'm local"
+    fmt.Println(localVar)}
+func main() {
+myFunction()
+}

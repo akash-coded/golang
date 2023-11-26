@@ -1,0 +1,12 @@
+//Lexical Scoping Example
+package main
+import "fmt"
+func outer() func() int {
+    a := 10 
+    return func() int {
+        a++
+        return a   } }
+func main() {
+    increment := outer()
+fmt.Printf(“Value 1 is : %d\n",increment())
+fmt.Printf(“Value 2 is : %d\n",increment()) }

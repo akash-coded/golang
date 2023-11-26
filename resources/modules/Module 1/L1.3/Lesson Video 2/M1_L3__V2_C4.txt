@@ -1,0 +1,8 @@
+//For Loop as While Loop Example
+package main 
+import "fmt"
+func main() { 
+	for { 
+	fmt.Printf("Welcome to the Program") 
+	} 
+} 

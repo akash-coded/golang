@@ -1,0 +1,27 @@
+//Structure Comparison Demonstration
+package main
+import (
+    "fmt"
+)
+type Person struct {
+    FirstName string
+    LastName  string
+}
+func main() {
+    person1 := Person{
+        FirstName: "John",
+        LastName:  "Doe",
+    }
+    person2 := Person{
+        FirstName: "Jane",
+        LastName:  "Smith",
+    }
+    person3 := Person{
+        FirstName: "John",
+        LastName:  "Doe",
+    }
+    areEqual := person1 == person2
+    fmt.Println("Are person1 and person2 equal?", areEqual)
+    areEqual = person1 == person3
+    fmt.Println("Are person1 and person3 equal?", areEqual)
+}

@@ -1,0 +1,14 @@
+//Boolean Example 
+package main
+import "fmt"
+func main() {
+str1 := "Welcome"
+str2:= "Dear"
+str3:= "Learners"
+result1:= str1 == str2
+result2:= str1 == str3
+fmt.Println( result1)
+fmt.Println( result2)
+fmt.Printf("The type of result 1 is %T",result1)
+fmt.Printf("The type of result 2 is %T",result2)
+}

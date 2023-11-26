@@ -1,0 +1,10 @@
+//Pointers Example 
+package main
+import "fmt"
+func main() {
+    var num int = 42
+    var ptr *int 
+    ptr = &num 
+    fmt.Printf("Value of num: %d\n", num)
+    fmt.Printf("Value pointed to by ptr: %d\n", *ptr) 
+}

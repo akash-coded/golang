@@ -1,0 +1,9 @@
+//Addition of Strings in Go
+package main
+import "fmt"
+func main() {
+    str1 := "Welcome"
+    str2 := "Learners"
+    result := str1 + str2
+    fmt.Println(result)
+}

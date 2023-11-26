@@ -1,0 +1,20 @@
+//Advisory File Locking
+package main
+import (
+    "fmt"
+    "os"
+    "syscall"
+)
+func main() {
+    file, err := os.OpenFile("lockedfile.txt", os.O_WRONLY|os.O_CREATE, 0666)
+if err != nil {
+        fmt.Println(err)
+        return  }
+defer file.Close()
+    err = syscall.Flock(int(file.Fd()), syscall.LOCK_EX|syscall.LOCK_NB)
+    if err != nil {
+        fmt.Println("File is locked by another process")
+        return }
+    fmt.Println("File is locked. Do your work here.")
+    syscall.Flock(int(file.Fd()), syscall.LOCK_UN)
+    fmt.Println("Lock released.") }

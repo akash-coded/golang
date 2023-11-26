@@ -1,0 +1,24 @@
+//Sync-Based Locking
+package main
+import (
+    "fmt"
+    "os"
+)
+func main() {
+    lock := make(chan struct{}, 1)
+    go func() {
+        lock <- struct{}{}
+        defer func() { <-lock }()
+file, err := os.Create("lockedfile.txt")
+        if err != nil {
+            fmt.Println(err)
+            return }
+        defer file.Close()
+        fmt.Println("File operations go here...") }()
+    go func() {
+        lock <- struct{}{}
+        defer func() { <-lock }()
+fmt.Println("This won't execute until the lock is released.")
+    }()
+    select {} 
+}

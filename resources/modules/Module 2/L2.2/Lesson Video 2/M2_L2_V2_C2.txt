@@ -1,0 +1,10 @@
+//Data Type – Number Example II
+package main
+import "fmt"
+func main() {
+	x := 20.45
+	y := 34.89
+	z := y-x
+	fmt.Printf("Result is: %f", z)
+	fmt.Printf("\nThe type of z is : %T", z) 
+}

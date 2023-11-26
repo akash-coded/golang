@@ -1,0 +1,21 @@
+// Pointer Receiver Demonstration
+package main
+import (
+	"fmt"
+	"math"
+)
+type Vertex struct {
+	a, b float64
+}
+func (v Vertex) Abs() float64 {
+	return math.Sqrt(v.a*v.a + v.b*v.b)
+}
+func (v *Vertex) Scale(f float64) {
+	v.a = v.a * f
+	v.b = v.b * f
+}
+func main() {
+	v := Vertex{3, 4}
+	v.Scale(10)
+	fmt.Println(v.Abs())
+}

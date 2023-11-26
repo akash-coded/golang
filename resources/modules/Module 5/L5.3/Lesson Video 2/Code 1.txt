@@ -1,0 +1,24 @@
+//Read and Write Example
+package main
+import (
+    "fmt"
+    "os"
+    "bufio")
+func main() {
+    fmt.Print("Enter some text: ")
+    scanner := bufio.NewScanner(os.Stdin)
+    scanner.Scan()
+    input := scanner.Text()
+    file, err := os.Create("output.txt")
+    if err != nil {
+fmt.Println("Error creating file:", err)
+        return
+    }
+    defer file.Close()
+    _, err = file.WriteString(input)
+    if err != nil {
+        fmt.Println("Error writing to file:", err)
+        return
+    }
+    fmt.Println("Data written to output.txt.")
+}

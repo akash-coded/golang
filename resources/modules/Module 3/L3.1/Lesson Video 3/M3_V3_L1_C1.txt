@@ -1,0 +1,32 @@
+//Handling Multiple Errors Demonstration
+package main
+import ( "
+	errors"
+            "fmt"
+)
+func main() 
+{
+    err1 := someFunction("Error 1")
+    err2 := someFunction("Error 2")
+    var errs []error
+    if err1 != nil
+ {
+        errs = append(errs, err1) }
+    if err2 != nil {
+        errs = append(errs, err2)    
+}
+ if len(errs) > 0 {
+        fmt.Println("Errors occurred:")
+        for i, err := range errs {
+            fmt.Printf("Error %d: %s\n", i+1, err) }
+    } else {
+        fmt.Println("No errors occurred.") 
+} 
+}
+func someFunction(message string) error {
+    if message != "No Error" {
+        return errors.New(message)
+    }
+    return nil 
+}
+

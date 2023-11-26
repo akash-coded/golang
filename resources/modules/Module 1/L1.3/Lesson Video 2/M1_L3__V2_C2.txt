@@ -1,0 +1,9 @@
+// Range example
+package main 
+import "fmt" 
+func main() { 
+	rvariable:= []string{"ABC", "Hello", "Edureka"} 
+	for i, j:= range rvariable { 
+	fmt.Println(i, j) 
+	} 
+} 

@@ -1,0 +1,5 @@
+const (
+    Red = iota
+    Green
+    Blue
+)
